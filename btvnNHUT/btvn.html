@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome cho Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="nav-brand">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#info" class="nav-link active" data-target="info">Info</a></li>
+                <li><a href="#projects" class="nav-link" data-target="projects">Dự án</a></li>
+                <li><a href="#experience" class="nav-link" data-target="experience">Kinh nghiệm</a></li>
+                <li><a href="#hobbies" class="nav-link" data-target="hobbies">Sở thích</a></li>
+                <li><a href="#strengths" class="nav-link" data-target="strengths">Thế mạnh</a></li>
+                <li><a href="#books" class="nav-link" data-target="books">Sách</a></li>
+                <li><a href="#certificates" class="nav-link" data-target="certificates">Chứng chỉ</a></li>
+                <li><a href="#gallery" class="nav-link" data-target="gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="app">
+        <!-- 1. INFO -->
+        <section id="info" class="view active">
+            <div class="container hero-section">
+                <img src="mq.jpg" alt="Ảnh đại diện" class="avatar" style="width: 150px; height: 150px; object-fit: cover;">
+                <h1>Xin chào, tôi là <strong>Trần Minh Quyền</strong></h1>
+                <h2>Sinh viên hệ thống thông tin / Lập trình viên Backend</h2>
+                <p>Đam mê xây dựng các hệ thống quản lý và tối ưu hóa cơ sở dữ liệu. Luôn sẵn sàng học hỏi công nghệ mới.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> 24521502@gm.uit.edu.vn</p>
+                    <p><i class="fab fa-github"></i> github.com/qquyenquyen23022006</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. DỰ ÁN -->
+        <section id="projects" class="view">
+            <div class="container">
+                <h2>Dự án đã tham dự</h2>
+                <div class="grid-3">
+                    <article class="card">
+                        <h3>QLbanvemaybay</h3>
+                        <p>Phần mềm quản lý bán vé máy bay với các chức năng đặt chỗ, tra cứu chuyến bay và xuất báo cáo.</p>
+                        <p><strong>Vai trò:</strong> Nhóm trưởng (Lead Developer)</p>
+                        <p><strong>Công nghệ:</strong> Java, Maven, Oracle DB, SQL</p>
+                        <a href="#" class="btn" aria-label="Xem mã nguồn QLbanvemaybay">Xem GitHub</a>
+                    </article>
+                    <article class="card">
+                        <h3>AgriSupplyChain</h3>
+                        <p>Hệ thống quản lý chuỗi cung ứng nông sản, theo dõi nguồn gốc và phân phối sản phẩm từ nông trại.</p>
+                        <p><strong>Vai trò:</strong> Backend Developer, Cấu hình CSDL</p>
+                        <p><strong>Công nghệ:</strong> Java, NetBeans, PL/SQL</p>
+                        <a href="#" class="btn" aria-label="Xem mã nguồn AgriSupplyChain">Xem GitHub</a>
+                    </article>
+                    <article class="card">
+                        <h3>Website Portfolio</h3>
+                        <p>Trang web cá nhân tĩnh đa trang giới thiệu bản thân và các dự án.</p>
+                        <p><strong>Vai trò:</strong> Frontend Developer</p>
+                        <p><strong>Công nghệ:</strong> HTML5, CSS3 (Flexbox/Grid), Vanilla JS</p>
+                        <a href="#" class="btn" aria-label="Xem dự án Portfolio">Xem trực tiếp</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. KINH NGHIỆM -->
+        <section id="experience" class="view">
+            <div class="container">
+                <h2>Kinh nghiệm</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Tháng 9/2024 - Hiện tại</div>
+                        <h3>Thực tập sinh Backend</h3>
+                        <h4>Công ty Công nghệ NIVIA</h4>
+                        <p>- Tham gia thiết kế API và tối ưu hóa truy vấn SQL trên hệ thống Oracle.<br>- Quản lý version control qua Git & GitHub.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Tháng 1/2024 - Tháng 6/2024</div>
+                        <h3>Dự án Đồ án Chuyên ngành</h3>
+                        <h4>Trường Đại học UIT</h4>
+                        <p>- Phối hợp cùng Võ Văn Vũ, Trần Minh Quyền, Nguyễn Ngô Quang, phát triển dự án nội bộ.<br>- Phân tích yêu cầu và thiết kế kiến trúc hệ thống.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SỞ THÍCH -->
+        <section id="hobbies" class="view">
+            <div class="container">
+                <h2>Sở thích</h2>
+                <ul class="hobby-list">
+                    <li><span class="emoji">💻</span> <strong>Code & Debugging:</strong> Tìm hiểu sâu về cấu trúc dữ liệu và giải quyết bug.</li>
+                    <li><span class="emoji">🎵</span> <strong>nghe nhạc:</strong>Thích nghe nhạc ballad và lofi</li>
+                    <li><span class="emoji">🏋️</span> <strong>GYM:</strong> Tập thể dục tại phòng gym 5 lần mỗi tuần để rèn luyện sức khỏe.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 5. THẾ MẠNH -->
+        <section id="strengths" class="view">
+            <div class="container">
+                <h2>Thế mạnh & Kỹ năng</h2>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h3>Kỹ năng chuyên môn</h3>
+                        <div class="skill">
+                            <label>Java / Maven</label>
+                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill">
+                            <label>Oracle Database (SQL/PL/SQL)</label>
+                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill">
+                            <label>Git / GitHub Workflows</label>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill">
+                            <label>HTML5 / CSS3 / JS</label>
+                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Kỹ năng mềm</h3>
+                        <div class="badges">
+                            <span class="badge">Làm việc nhóm</span>
+                            <span class="badge">Giải quyết vấn đề</span>
+                            <span class="badge">Nghiên cứu tài liệu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. SÁCH YÊU THÍCH -->
+        <section id="books" class="view">
+            <div class="container">
+                <h2>Sách yêu thích</h2>
+                <div class="grid-3">
+                    <article class="book-card">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=200&q=80" alt="Bìa sách Tư bản" loading="lazy">
+                        <h3>Tư bản (Tập 1)</h3>
+                        <p><strong>Tác giả:</strong> Karl Marx</p>
+                        <p class="review">Một công trình đồ sộ giúp hiểu sâu sắc về bản chất của sản xuất, giá trị thặng dư và các học thuyết kinh tế lịch sử.</p>
+                    </article>
+                    <article class="book-card">
+                        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=200&q=80" alt="Bìa sách Clean Code" loading="lazy">
+                        <h3>Clean Code</h3>
+                        <p><strong>Tác giả:</strong> Robert C. Martin</p>
+                        <p class="review">Cuốn sách gối đầu giường giúp tôi rèn luyện tư duy tổ chức mã nguồn sạch, dễ đọc và bảo trì trong các dự án Java.</p>
+                    </article>
+                    <article class="book-card">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=200&q=80" alt="Bìa sách Head First Design Patterns" loading="lazy">
+                        <h3>Head First Design Patterns</h3>
+                        <p><strong>Tác giả:</strong> Eric Freeman</p>
+                        <p class="review">Cách tiếp cận trực quan, dễ hiểu về các mẫu thiết kế hướng đối tượng, rất hữu ích khi áp dụng vào thực tế.</p>
+                    </article>
+                </div>
+                <p class="attribution"><em>* Nguồn ảnh minh họa bìa sách từ Unsplash.</em></p>
+            </div>
+        </section>
+
+        <!-- 7. CHỨNG CHỈ -->
+        <section id="certificates" class="view">
+            <div class="container">
+                <h2>Chứng chỉ đã nhận</h2>
+                <div class="grid-2">
+                    <article class="cert-card">
+                        <h3>Oracle Cloud Infrastructure Foundations</h3>
+                        <p><strong>Đơn vị cấp:</strong> Oracle</p>
+                        <p><strong>Thời gian:</strong> Tháng 5/2025</p>
+                        <img src="https://images.unsplash.com/photo-1523289201538-4e89104033cc?auto=format&fit=crop&w=400&q=80" alt="Chứng chỉ Oracle" loading="lazy">
+                    </article>
+                    <article class="cert-card">
+                        <h3>Lập trình hướng đối tượng với Java</h3>
+                        <p><strong>Đơn vị cấp:</strong> Coursera / Đại học XYZ</p>
+                        <p><strong>Thời gian:</strong> Tháng 11/2024</p>
+                        <img src="https://images.unsplash.com/photo-1523289201538-4e89104033cc?auto=format&fit=crop&w=400&q=80" alt="Chứng chỉ Java" loading="lazy">
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. GALLERY -->
+        <section id="gallery" class="view">
+            <div class="container">
+                <h2>Gallery Kỷ niệm</h2>
+                <div class="gallery-grid">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80" alt="Làm việc nhóm tại thư viện" class="gallery-img" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80" alt="Thảo luận dự án AgriSupplyChain" class="gallery-img" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=400&q=80" alt="Code xuyên đêm với IDE" class="gallery-img" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Setup môi trường GitHub và NetBeans" class="gallery-img" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Trần Minh Quyền. Designed with HTML/CSS/JS.</p>
+    </footer>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Hình ảnh phóng to">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
